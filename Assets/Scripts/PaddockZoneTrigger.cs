@@ -27,6 +27,7 @@ public class PaddockZoneTrigger : MonoBehaviour
         if (crowdCount >= crowdMaxCount)
         {
             gameOverPanel.SetActive(true);
+            PlayerPrefs.SetInt("CurrentlevelIndex", PlayerPrefs.GetInt("CurrentlevelIndex") + 1);
         }
     }
 }
