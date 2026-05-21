@@ -3,13 +3,19 @@ using UnityEngine;
 public class LevelSwitcher : MonoBehaviour
 {
     [SerializeField] private GameObject[] levels;
-    private int currentlevelIndex;
     private void Awake()
     {
         LevelSwitch();
     }
     public void LevelSwitch()
     {
-        levels[PlayerPrefs.GetInt("CurrentlevelIndex")].SetActive(true);
+        if (PlayerPrefs.GetInt("CurrentlevelIndex") < levels.Length)
+        {
+            levels[PlayerPrefs.GetInt("CurrentlevelIndex")].SetActive(true);
+        }
+        else
+        {
+            print("AllLevelsComplete");
+        }
     }
 }
