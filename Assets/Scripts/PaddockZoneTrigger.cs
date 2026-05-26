@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PaddockZoneTrigger : MonoBehaviour
 {
-    [SerializeField] private LayerMask _crowdLayers;
      private int crowdCount;
     private void OnTriggerEnter2D(Collider2D collision)
     {
