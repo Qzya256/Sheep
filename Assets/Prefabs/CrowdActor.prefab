@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 4593444274995958114}
   - component: {fileID: 2322219338536645213}
   - component: {fileID: 753266685931061410}
+  - component: {fileID: -6642479914257343602}
   m_Layer: 7
   m_Name: CrowdActor
   m_TagString: Untagged
@@ -236,3 +237,15 @@ MonoBehaviour:
   _separationMaxPush: 1.1
   _linearDamping: 0.85
   _steeringSmoothTime: 0.1
+--- !u!114 &-6642479914257343602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2606093332944605942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea31e2fe067b194699295be802daa55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CrowdTag
